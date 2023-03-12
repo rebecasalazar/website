@@ -4,6 +4,7 @@
   "icons": [
 
   ],
+  "id": "index.html",
   "start_url": "index.html",
   "scope": ".",
   "theme_color": "#FFFFFF",
