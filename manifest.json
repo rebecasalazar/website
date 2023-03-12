@@ -17,6 +17,18 @@
       "purpose": "any"
     },
     {
+      "src": "src/icons/apple-touch-icon.png",
+      "type": "image/png",
+      "size": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "src/icons/apple-touch-icon.png",
+      "type": "image/png",
+      "size": "144x144",
+      "purpose": "any"
+    },
+    {
       "src": "src/icons/android-chrome-192x192.png",
       "type": "image/png",
       "size": "192x192",
