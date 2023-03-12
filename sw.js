@@ -1,15 +1,12 @@
 
 self.addEventListener('install', (event) => {
-
     console.log('event: install');
-
     const install = async () => {
         setTimeout(() => {
             console.log('service worker installed!');
             self.skipWaiting();
         }, 2000);
     }
-
     event.waitUntil(install());
 });
 
