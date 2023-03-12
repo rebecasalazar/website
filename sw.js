@@ -1,18 +1,11 @@
 
 self.addEventListener('install', (event) => {
 
-    console.log('service worker installing...');
-    console.log(event);
+    console.log('event: install');
 
-    debugger;
     const install = async () => {
-
-        debugger;
-
         setTimeout(() => {
-
             console.log('service worker installed!');
-            debugger;
             self.skipWaiting();
         }, 2000);
     }
@@ -21,26 +14,17 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', event => {
-    debugger;
-    // delete old cache
-    console.log('service worker is activating...');
-    console.log(event);
+    console.log('event: activate');
 });
 
 self.addEventListener('fetch', (event) => {
-    debugger;
-    console.log('fetch event:');
-    console.log(event);
+    console.log(`event: fetch ${event.request.url}`);
 });
 
 self.addEventListener('sync', (event) => {
-    debugger;
-    console.log('sync event:');
-    console.log(event);
+    console.log(`event: sync`);
 });
 
 self.addEventListener('push', (event) => {
-    debugger;
-    console.log('push event:');
-    console.log(event);
+    console.log(`event: push`);
 });
