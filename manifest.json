@@ -4,7 +4,8 @@
   "icons": [
 
   ],
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "scope": ".",
+  "background_color": "#FFFFFF",
   "display": "standalone"
 }
