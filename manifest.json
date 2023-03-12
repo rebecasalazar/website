@@ -1,14 +1,33 @@
 {
-  "name": "Rebeca App",
+  "name": "Rebeca Application",
   "short_name": "Rebeca App",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "icons": [
-
+    {
+      "src": "src/icons/favicon-16x16.png",
+      "type": "image/png",
+      "size": "16x16"
+    },
+    {
+      "src": "src/icons/favicon-32x32.png",
+      "type": "image/png",
+      "size": "32x32"
+    },
+    {
+      "src": "src/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "size": "192x192"
+    },
+    {
+      "src": "src/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "size": "512x512"
+    }
   ],
   "id": "index.html",
   "start_url": "index.html",
   "scope": ".",
-  "theme_color": "#FFFFFF",
-  "background_color": "#FFFFFF",
   "display": "standalone",
   "orientation": "portrait"
 }

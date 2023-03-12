@@ -1,9 +1,12 @@
-
+//Service Worker
 self.addEventListener('install', (event) => {
-    console.log('event: install');
+    console.log('event: Service Worker is Installing');
+    debugger;
     const install = async () => {
+        debugger;
         setTimeout(() => {
-            console.log('service worker installed!');
+            debugger;
+            console.log('Service Worker is Installed!');
             self.skipWaiting();
         }, 2000);
     }
@@ -11,7 +14,8 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', event => {
-    console.log('event: activate');
+    debugger;
+    console.log('event: Service Worker is Activate!');
 });
 
 self.addEventListener('fetch', (event) => {
