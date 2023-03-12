@@ -9,7 +9,7 @@ self.addEventListener('install', event => {
     debugger;
     console.log('service worker installing...');
     console.log(event);
-    self.skipWaiting();
+    self.skipWaiting().then();
 });
 
 self.addEventListener('activate', event => {
