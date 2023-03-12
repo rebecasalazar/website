@@ -7,22 +7,26 @@
     {
       "src": "src/icons/favicon-16x16.png",
       "type": "image/png",
-      "size": "16x16"
+      "size": "16x16",
+      "purpose": "any"
     },
     {
       "src": "src/icons/favicon-32x32.png",
       "type": "image/png",
-      "size": "32x32"
+      "size": "32x32",
+      "purpose": "any"
     },
     {
       "src": "src/icons/android-chrome-192x192.png",
       "type": "image/png",
-      "size": "192x192"
+      "size": "192x192",
+      "purpose": "any"
     },
     {
       "src": "src/icons/android-chrome-512x512.png",
       "type": "image/png",
-      "size": "512x512"
+      "size": "512x512",
+      "purpose": "any"
     }
   ],
   "id": "index.html",
