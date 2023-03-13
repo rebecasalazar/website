@@ -19,13 +19,13 @@
     {
       "src": "src/icons/apple-touch-icon.png",
       "type": "image/png",
-      "size": "180x180",
+      "size": "144x144",
       "purpose": "any"
     },
     {
       "src": "src/icons/apple-touch-icon.png",
       "type": "image/png",
-      "size": "144x144",
+      "size": "180x180",
       "purpose": "any"
     },
     {

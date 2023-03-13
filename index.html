@@ -10,17 +10,64 @@
     <!-- Android -->
     <meta name="theme-color" content="#FFFFFF">
 
-<!--    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">-->
-<!--    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">-->
-<!--    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
-<!--    <link rel="manifest" href="/site.webmanifest">-->
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" href="src/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="src/icons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/icons/android-chrome-192x192.png">
+
+    <link rel="apple-touch-startup-image" href="src/icons/apple-touch-icon.png">
+
+    <!-- iPhone Xs Max (1242px x 2688px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPhone Xr (828px x 1792px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPhone X, Xs (1125px x 2436px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPad Pro 12.9" (2048px x 2732px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPad Pro 11” (1668px x 2388px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPad Pro 10.5" (1668px x 2224px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+    <!-- iPad Mini, Air (1536px x 2048px) -->
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="src/icons/android-chrome-512x512.png">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!--    default: results in a white status bar with black text and symbols.-->
+    <!--    black: results in a black status bar and black text and symbols, making it appear completely black. If you do not use the status bar meta tag, this is what status bar will look like.-->
+    <!--    black-translucent: results in white text and symbols, and the status bar will take the same background color as the body element of your web app.-->
+
+    <meta name="apple-mobile-web-app-title" content="Rebeca App">
+
 
     <style>
 
-        body {
-            margin: 0;
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+
+            font-family: 'Helvetica';
+        }
+
+        html, body {
+            margin: 0 !important;
             padding: 0;
-            font-family: Helvetica;
+
+            width: 100%;
+
+            overscroll-behavior-y: contain;
+
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
         }
 
         .menu {
@@ -35,7 +82,7 @@
 
     </style>
 </head>
-<body class="menu">
+<body class="menu" ontouchstart="">
     <div >
         <div>
             <h1>Rebeca Salazar</h1>
