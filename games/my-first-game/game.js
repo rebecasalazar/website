@@ -1,20 +1,27 @@
-
-GamePlayManager = {
-    init: function() {
-        console.log("init");
-    },
-    preload: function() {
-        game.load.image('background', 'assets/images/background.png');
-    },
-    create: function() {
-        game.add.sprite(0, 0, 'background');
-    },
-    update: function() {
-        console.log("update");
+let config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    scene: {
+        preload: preload,
+        create: create,
+        update: update
     }
+};
+
+let game = new Phaser.Game(config);
+
+function preload ()
+{
+    debugger;
 }
 
-const game = new Phaser.Game(1136, 640, Phaser.AUTO);
+function create ()
+{
+    debugger;
+}
 
-game.state.add("gameplay", GamePlayManager);
-game.state.start("gameplay");
+function update ()
+{
+    debugger;
+}
